@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% block head %}
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/project.css') }}">
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/chip.css') }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Jekyll v4.1.1">
+
+<link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
+
+<!-- Bootstrap core CSS -->
+<link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+</style>
+<!-- Custom styles for this template -->
+<link href="jumbotron.css" rel="stylesheet">
+</head>
+{% endblock %}
+
+
+{% block body %}
+
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 style="margin-right: 400px;">My projects</h1><br>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Covid Coach</h2>
+        <p style="text-align: justify;">
+
+            Project description
+            As in this Global Pandemic situation, all the people are advised to stay at their homes and in this situation all the doctors and nurses are busy and there are less availability of beds and hospitals.Covid Coach provides an online comprehensive solution that is an online platform for quick assistance. It provides easy navigation and statistics of all important amenities such as beds, ventilators, ICU’s, oxygen cylinders, etc. We ensure that all the people in the society have access to free or low-cost medical optometry and care. The people can sit at home and get help during emergencies. </p>
+        <p><a class="btn btn-secondary" href="http://corona-19.epizy.com" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Covid Guard</h2>
+        <p style="text-align: justify;">In the present scenario due to Covid-19, there is no efficient face mask detection applications which are now in high demand for transportation means, densely populated areas, residential districts, large-scale manufacturers and other enterprises to ensure safety. Amidst the COVID-19 situation, maintaining social distancing and wearing masks is ignored. And, no data is recorded to ﬁnd out which regions are violating the same. If there is some way to get this data, necessary actions can be taken. Well, rest easy as our solution does this for you!</p>
+        <p><a class="btn btn-secondary" href="https://github.com/abhi526691/Covid-Guard/tree/patch-1" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Sepsis Prediction</h2>
+        <p style="text-align: justify;">The project is basically related to health field because sepsis is a life threatning disease which need to be detected well before time in order to save life. So in this project I have used some machine learning algorithm like KNN, Gaussian Bayes, logistic Regression to predict whether the person is suffering from sepsis or not. The data was taken from kaggle which was pre-processed to remove null values and only critical data was taken to predict within 1st hour of patient admission</p>
+        <p><a class="btn btn-secondary" href="https://github.com/abhi526691/Sepsis-Detection" role="button">View details &raquo;</a></p>
+      </div>
+    </div>
+
+    <hr>
+
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Field Monitoring System</h2>
+        <p style="text-align: justify;">As topic suggest everything will be automatic using a soil sensor the moisture level of the soil will be measured and the output will be send on to the cloud using weather prediction technique taking the data of past three days the weather of the next day will be predicted if both the output from soil sensor and weather prediction technique is false we will have to irrigate the field which can be done automatically by setting a motor</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Smart Dustbin</h2>
+        <p style="text-align: justify;">As the title suggest the project is initiated to keep our environment neat and clean. It will be Like a normal dustbin but a bit more advance feature embedded in it. The feature were like It opens automatically whenever a person comes closer to it at a particular range of around 20m, It sends a message to the concerned staff of garbage collector department when it is about to get filled, It doesn't need any trained person to install. It can be installed anywhere via any person</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Digital Tracking of Children</h2>
+        <p style="text-align: justify;">As migrants faces issues with health, housing and other important day to day facilities as they move so we came up with this idea where information is collected from the migrants as a local level. On the basis of the collected data, medical facilities will be provided for the children. A classic machine learning algorithm is applied to provide the necessary medication and other health care oppurtunities in a new place, which promotes a health society</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+    </div>
+
+    <hr>
+
+  </div>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+{% endblock %}

@@ -1,0 +1,224 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/timeline.css') }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col s12 m4 l8">
+            <span class="date">2020</span>
+            <ul class="list">
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">school</i>
+                        <a href="/timeline" class="title">[edu] Final Year</a>
+                    </div>
+                    <span class="content">I am currently in my final year enjoying the online works with the comfort of 
+                        my home. I had been doing tons of projects and working on new technologies participating in lots of
+                        hackathons....
+                    </span>
+                </li>
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">homes</i>
+                        <a href="/timeline" class="title">[life] Apartment in Lumbini</a>
+                    </div>
+                    <span class="content">Got back home safely before this outbreak and finally 
+                        got to know that nothing is permanent, you ought to have savings for at least a year.
+                    </span>
+                </li> 
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">work</i>
+                        <a href="/timeline" class="title">[work] Chief Igniter</a>
+                    </div>
+                    <span class="content">For now I am working as a chief igniter for my college where I will be conducting different events like hackathons, quizes, webinars for my college
+                    </span>
+                </li> 
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">work</i>
+                        <a href="/timeline" class="title">[work] Website developer</a>
+                    </div>
+                    <span class="content"> Worked on frontend of the website for the company namely EMGE and designed there layout, interface and also helped the backend developer connecting database with the frontend.
+                    </span>
+                </li> 
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">work</i>
+                        <a href="/timeline" class="title">[work] Website developer</a>
+                    </div>
+                    <span class="content"> Worked on frontend of a non-profitable organization namely Samarthya and helped in designing there website.
+                    </span>
+                </li> 
+            </ul>
+            <span class="date">2019</span>
+            <ul class="list">
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">school</i>
+                        <a href="/timeline" class="title">[college] Veltech</a>
+                    </div>
+                    <span class="content">Started my third year with great enthusiasm and expectations
+                    </span>
+                </li>
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">homes</i>
+                        <a href="/timeline" class="title">[life] Avadi, Chennai</a>
+                    </div>
+                    <span class="content">Moved to College Hostel
+                    </span>
+                </li>
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">work</i>
+                        <a href="/timeline" class="title">[work] Sepsis Detection</a>
+                    </div>
+                    <span class="content">Got over my fear of working on real life projects. Finally 
+                        made a project on prediction of Sepsis using clinical data and also made a simple
+                        GUI interface for my project.
+                        </span>
+                </li>
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">linked_camera</i>
+                        <a href="/timeline" class="title">[work] Mask Detection</a>
+                    </div>
+                    <span class="content">Studied and worked a lot on Tensorflow, keras framework of python and made a project
+                        using tensorflow to detect whether a person is wearing a mask or not with 95% accuracy
+                        </span>
+                </li>
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">school</i>
+                        <a href="/timeline" class="title">[edu] Data Structures, Algorithms</a>
+                    </div>
+                    <span class="content">If you want to win the game, you have to follow its rules. I decided I'd
+                    like to experience working at a big company, and all
+                        <a href="https://en.wikipedia.org/wiki/Facebook,_Apple,_Amazon,_Netflix_and_Google">FAANG</a>
+                            companies need their employees to have strong CS foundations and problem solving abilities.
+                            I dedicated a major chunk of my personal free time solving questions on
+                            <a href="https://www.hackerrank.com">hackerrank.com</a>,
+                            and <a href="https://www.codechef.com">codechef.com</a>. I did about 100+ problems in total.
+                        </span>
+                </li>
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">books</i>
+                        <a href="/timeline" class="title">[organizer]Coding event</a>
+                    </div>
+                    <span class="content">Organized an online Code Debugging competition.The Competition was basically having two rounds where 1st round was consisting of 20 question which needs to be solved in 20 mins.
+                        The student selected from 1st round had to compete in 2nd round which was having 15 question out of in 15 minutes.
+                        In 2nd round 2 winners were selected
+                        </span>
+                </li>
+            </ul>
+
+
+            <span class="date">2018</span>
+            <ul class="list">
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">school</i>
+                        <a href="/timeline" class="title">[edu] second year</a>
+                    </div>
+                    <span class="content"> Focused on strengthening my core branch of study. Studied a lot on Java Programming, Database, Data Structures
+                    </span>
+                </li>
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">linked_camera</i>
+                        <a href="/projects/lib-graf" class="title">[work] project</a>
+                    </div>
+                    <span class="content">It's a simple project done in java and mysql. I have used netbeans IDE for java programming and xampp for database for storing data.I also ported my work on <a
+                            href="https://github.com/abhi526691/Student-Record">Student Record</a> to use this library.</span>
+                </li>
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">linked_camera</i>
+                        <a href="/projects/camera-client-arch" class="title">[work] Pygame</a>
+                    </div>
+                    <span class="content">In the middle of the year I got fascinated toward games and thought of developing some games too so started learning <a href="https://www.pygame.org/docs/">pygame</a>,a great framework of python to built games where I built games like <a href="https://github.com/abhi526691/snake-game">snake game</a>, <a href="https://github.com/abhi526691/Block-Game">Block Game</a></span>
+                </li>
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">local_airport</i>
+                        <a href="#" class="title">[life] week-long Travel</a>
+                    </div>
+                    <span class="content">Took a week off of work to travel south India. I also spent time in kanyakumari,Dhanuskodi,Rameshworom with my friends, It was a real amusement for all of us to travel in three different beautiful places like that </span>
+                </li>
+            </ul>
+            <span class="date">2017</span>
+            <ul class="list">
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">school </i>
+                        <a href="#" class="title">[edu] First Year</a>
+                    </div>
+                    <span class="content">I enjoyed my first year as it was a lifetime experience to step out from my hometown and to get settled in totally a new place with people of totally different mindset of people</span>
+                </li>
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">linked_camera</i>
+                        <a href="#" class="title">[work] Smart Dustbin Using IOT</a>
+                    </div>
+                    <span class="content">It opens automatically whenever a person comes closer to it at a particular range of around 20m. It also sends a message to the concerned staff of garbage collector department when it is about to get filled.
+                        . People will be more attracted toward the creativity of it.
+                        . It doesn't need any trained person to install. It can be installed anywhere via any person</span>
+                </li>
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">work</i>
+                        <a href="/projects/tonbo-imaging" class="title">[workshop]Python Programming</a>
+                    </div>
+                    <span class="content">Got this chance to participate in a workshop in IIT Madras, It was my first workshop and a lifetime experience</span>
+                </li>
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">local_airport</i>
+                        <a href="#" class="title">[travel] 3-day plan</a>
+                    </div>
+                    <span class="content">Got exposed to the beautiful world of south india and it was a life time experience for me to travel to the beautiful and hidden beauty of south india </span>
+                </li>
+            </ul>
+            <span class="date">2015</span>
+            <ul class="list">
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">school</i>
+                        <a href="#" class="title">[edu] Higher Secondary</a>
+                    </div>
+                    <span class="content">Enjoyed a lot and still remembering those days those fun and learning a whole lot of things.</span>
+                </li>
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">books</i>
+                        <a href="/projects/graviky-labs" class="title">[hobby] Quiz Competition</a>
+                    </div>
+                    <span class="content">Won a quiz competition held in college.</span>
+                </li>
+                <li>
+                    <div class="icon-title">
+                        <i class="tiny material-icons">local_airport</i>
+                        <a href="#" class="title">[travel] one-day trip</a>
+                    </div>
+                    <span class="content">It was moreover like a picnic with more than 100 of friend there was a hell lot of energy among us.</span>
+                </li>
+            </ul>
+        
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+
+<!--<li><a href="/projects/" class="title">[]</a>
+    <span class="content"></span></li>-->
+{% endblock %}
